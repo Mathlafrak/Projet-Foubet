@@ -1,7 +1,10 @@
 /* liste les donnees de la chute d'un corps avec calculs en virgule flottante */
+#include "vfixe.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+
+
 
 int main(int N, char *P[])
 {
@@ -20,4 +23,7 @@ float dt=0.1, t, dx, dv;
   }
   return 0;
 }
+
+
+
 

@@ -1,28 +1,14 @@
 /* liste les donnees de la chute d'un corps avec calculs en virgule fixe */
-#include <stdio.h>
+#include "vfixe.h"
+#include <string.h>
+#include <stdlib.h>
 #include <stdint.h>
+#include <stdio.h>
 
+
+typedef int32_t vfix ;
 /* on choisi un type d'entier pour coder notre virgule fixe */
-typedef int32_t vfix; /* a ajuster si besoin */
-
-#define UNITE 1000    /* a ajuster si besoin */
-
-/* toutes ces fonctions retournent un element en virgule fixe */
-extern vfix valeur(int part_ent, int part_decim);
-extern vfix fraction(int numerateur, int denominateur);
-extern vfix somme(vfix, vfix);  /* retourne la somme de 2 elts */
-extern vfix produit(vfix, vfix);/* retourne le produit de 2 elts */
-
-/* fonctions speciales */
-extern vfix ch2decim(char *); /* retourne la partie decimale en fct de UNITE */
-/* exemples : UNITE         1000      100000
-           ch="12"           120       12000
-           ch="0032"         003       00320
-******************************************************************************/
-extern int nbdecim(void);     /* retourne le nb de decimales en fct de UNITE */
-/* exemples : UNITE         1000      100000
-           nbdecim()           3           5
-******************************************************************************/
+ 
 
 
 int main(int N, char *P[])
