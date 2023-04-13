@@ -1,5 +1,9 @@
 # Voir DocGnuplot.pdf pour plus d'info !!
 
-plot [*:*] [-600:0] "chute.data" using 1:2 title "hauteur" with lines
-replot "chute.data" using 1:3 title "vitesse" with lines
+plot [*:*] [-600:0] "chute_fp.data" using 1:2 title "hauteur" with lines
+replot "chute_fp.data" using 1:3 title "vitesse" with lines
+
+plot [*:*] [-600:0] "chute_vf.data" using 1:2 title "hauteur2" with lines
+replot "chute_vf.data" using 1:3 title "vitesse2" with lines
+
 
