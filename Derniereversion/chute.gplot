@@ -1,0 +1,6 @@
+# Voir DocGnuplot.pdf pour plus d'info !!
+
+plot "chute_fp.data" using 1:2 title "hauteur FP" with lines,\
+"chute_vf.data" using 1:2 title "hauteur VF" with lines,\
+"chute_fp.data" using 1:3 title "vitesse FP" with lines,\
+"chute_vf.data" using 1:3 title "vitesse VF" with lines
